@@ -53,3 +53,4 @@ CREATE TABLE IF NOT EXISTS public.bookings (
     notes TEXT NOT NULL CHECK (char_length(notes) >= 10),
     created_at TIMESTAMPTZ NOT NULL DEFAULT timezone('utc'::text, now())
 );
+
